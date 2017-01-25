@@ -4,8 +4,12 @@
   "description": "Music platform that allows producers to share, receive feedback and promote their song.",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "eslint": "^3.14.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "should": "^11.1.2",
+    "supertest": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^3.14.0",
