@@ -6,15 +6,17 @@ const app = express();
 
 const router = express.Router();
 
+const path = require('path');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 router.get('/', (req, res) => {
-  res.json({ error: false, messge: 'Hello !' });
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-router.post('/add', (req, res) => {
-  res.json({ error: false, message: 'success', data: req.body.num1 + req.body.num2 });
+router.post('/quotes', (req, res) => {
+  console.log(req.body);
 });
 
 app.use('/', router);
