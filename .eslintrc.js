@@ -4,7 +4,9 @@ module.exports = {
         "import"
     ],
     "env": {
-      "mocha": true
+      "mocha": true,
+      "node": true,
+      "browser": true
   },
     "rules": {
       "no-console": 0

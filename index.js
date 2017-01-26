@@ -1,11 +1,8 @@
 const express = require('express');
-
 const bodyParser = require('body-parser');
 
 const app = express();
-
 const router = express.Router();
-
 const path = require('path');
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +12,7 @@ router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-router.post('/quotes', (req, res) => {
+router.post('/quotes', (req) => {
   console.log(req.body);
 });
 

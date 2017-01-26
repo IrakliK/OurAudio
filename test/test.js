@@ -1,5 +1,4 @@
 const supertest = require('supertest');
-
 const should = require('should');
 
 const server = supertest.agent('http://localhost:3000');
