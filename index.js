@@ -4,6 +4,11 @@ const bodyParser = require('body-parser');
 const app = express();
 const router = express.Router();
 const path = require('path');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/ouraudio');
+const db = mongoose.connection;
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
