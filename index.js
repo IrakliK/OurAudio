@@ -6,8 +6,9 @@ const expressValidator = require('express-validator');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
-const LocalStrategy = require('passport-local');
+const LocalStrategy = require('passport-local').Strategy;
 const mongo = require('mongodb');
+
 const app = express();
 const router = express.Router();
 const path = require('path');
