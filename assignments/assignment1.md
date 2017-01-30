@@ -81,44 +81,66 @@
 | Martin Luther King Day	| January 20 |
 | President's Day	| February 17 |
 
+![The Mr. Bones application is a hangman word game for Windows Phone](images/Zombie_Apocalypse_Game.png)
+
 ### Problem 3.6
 > In addition to losing time from vacation and sick leave, projects can suffer from problems that just strike out of nowhere. Sort of a bad version of deus ex machina. For example, senior management could decide to switch your target platform from Windows desktop PSs to the latest smartwatch technology. Or a strike in the Far East could delay the shipment of your new servers. Or one of your developers might move to Iceland. How can you handle these sorts of completely unpredictable problems?
 
-Answer
+- You can treat `deus ex machina` problems the same way you handle unexpected sick leave. Add tasks at the end of the schedule to account for completely unexpected problems. When one of these problems does occur, insert its lost time into the schedule.
 
 ### Problem 3.8
 > What are the two biggest mistakes you can make while tracking tasks?
 
-Answer
+- The biggest mistake you can make while tracking tasks is not taking action when a task slips. At a minimum, you need to pay closer attention to the task so that you can take action if it’s in trouble.
+- The second biggest mistake is piling more people on the task and assuming they can cut the total time. Unless the new people have particularly useful expertise, bringing them up to speed may make the task take even longer.
 
 ### Problem 4.1
 > List five characteristics of good requirements.
 
-Answer
+Five characteristics of good requirements are
+- clear (easy to understand)
+- unambiguous
+- consistent
+- prioritized
+- verifiable.
 
 ### Problem 4.3
 > Suppose you want to build a program called TimeShifter to upload and download files at scheduled times while you're on vacation. The following list shows some of the applications requirements.
 
-1. Allow users to monitor uploads/downloads while away from the office.
-1. Let the user specify website log-in parameters such as an Internet address, a port, a username, and a password.
-1. Let the user specify upload/download parameters such a number of retries if there's a problem.
-1. Let the user select an Internet location, a local file, and a time to perform the upload/download.
-1. Let the user schedule uploads/downloads at any time.
-1. Allow uploads/downloads to run at any time.
-1. Make uploads/downloads transfer at least 8 Mbps.
-1. Run uploads/downloads sequentially. Two cannot run at the same time.
-1. If an upload/download is scheduled for a time whan another is in progress, it waits until the other one finishes.
-1. Perform schedule uploads/downloads.
-1. Keep a log of all attempted uploads/downloads and whether the succeeded.
-1. Let the user empty the log.
-1. Display reports of upoad/download attempts.
-1. Let the user view the log reports on a remote device such as a phone.
-1. Send an e-mail to an administrator if an upload/download fails more than its maximum retry number of times.
-1. Send a text message to an administrator if an upload/download fails more than it's maximum retury umber of times.
+>1. Allow users to monitor uploads/downloads while away from the office.
+>1. Let the user specify website log-in parameters such as an Internet address, a port, a username, and a password.
+>1. Let the user specify upload/download parameters such a number of retries if there's a problem.
+>1. Let the user select an Internet location, a local file, and a time to perform the upload/download.
+>1. Let the user schedule uploads/downloads at any time.
+>1. Allow uploads/downloads to run at any time.
+>1. Make uploads/downloads transfer at least 8 Mbps.
+>1. Run uploads/downloads sequentially. Two cannot run at the same time.
+>1. If an upload/download is scheduled for a time whan another is in progress, it waits until the other one finishes.
+>1. Perform schedule uploads/downloads.
+>1. Keep a log of all attempted uploads/downloads and whether the succeeded.
+>1. Let the user empty the log.
+>1. Display reports of upoad/download attempts.
+>1. Let the user view the log reports on a remote device such as a phone.
+>1. Send an e-mail to an administrator if an upload/download fails more than its maximum retry number of times.
+>1. Send a text message to an administrator if an upload/download fails more than it's maximum retury umber of times.
 
 > For this exercise, list the audience-oriented categories for each requirement. Are there requirements in each category? [If not, state why not…]
 
-Answer
+- 1) business
+- 2) functional, user
+- 3) functional, user
+- 4) functional, user
+- 5) nonfunctional
+- 6) nonfunctional
+- 7) nonfunctional
+- 8) nonfunctional
+- 9) nonfunctional
+- 10) functional
+- 11) functional
+- 12)  functional, user
+- 13)  functional, user
+- 14)  functional, user
+- 15)  functional, user
 
 ### Problem 4.9
 ![The Mr. Bones application is a hangman word game for Windows Phone](images/1-1.jpg)
@@ -127,4 +149,11 @@ Answer
 
 > Brainstorm this application and see if you can think of ways you might change it. Use the MOSCOW method to prioritize your changes.
 
-Answer
+- Advertising(M)
+  - A phone application typically costs money to install or displays advertising. Currently, the program does neither. It could be modi ed to display advertising.
+- Multiple high scores (S)
+  - If the program tracks high scores, it could be modi ed to track high scores for multiple users.
+- Animated win (C)
+  - When the user wins, the program could display an animation.
+- Word difficulty tracking (W)
+  - The program could track the number of incorrect guesses for each word to determine its difficulty. It would periodically report values to a central database for distribution during later updates.
