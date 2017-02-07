@@ -24,6 +24,10 @@ body {
   line-height: 3rem;
 }
 
+#frontlogo {
+  margin-right: 10px;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
