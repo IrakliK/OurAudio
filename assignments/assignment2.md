@@ -30,13 +30,15 @@ No need for a database because the *ClassyDraw* application can store each drawi
 
 
 ### Problem 6.1
-> Consider the *ClassyDraw* classes *Line*, *Rectangle*, *Ellipse*, *Star*, and *Text*. What properties do these classes all share? What properties do they not share? Are there any properties shared by some classes and not others? Where should the shared and nonshared properties be implemented?
+> Consider the *ClassyDraw* classes *Line*, *Rectangle*, *Ellipse*, *Star*, and *Text*. What properties do these classes all share? What properties do they not share? Are there any properties shared by some classes and not others? Where should the shared and non-shared properties be implemented?
 
+Those classes all represent things that are drawn, so they share properties needed for drawing, including a foreground color and background color. All the classes can also define their drawing position by storing an upper-left corner, a width, and a height.Some classes need extra data to draw their particular type of shape, and the classes won’t share that data. For example, the Text class needs font information and the string to draw. The Star class needs to know how many points to give the star. Some properties can be shared by some classes and not others. Rectangle, Ellipse, and Star can be  filled, so they need a fill color.
 
 
 ### Problem 6.2
 > Draw an inheritance diagram showing the properties you identified for Exercise 1. (Create parent classes as needed, and don't forget the *Drawable* class at the top.)
 
+![UML](images/UML_6_2.png)
 
 ### Problem 6.3
 > The following list gives the properties of several business-oriented classes.
@@ -48,5 +50,9 @@ No need for a database because the *ClassyDraw* application can store each drawi
 > - VicePresident — Name, Phone, Address, EmployeeID, Office, Salary, Managers
 > Assuming a *Supplier* is someone who supplies products for your business, draw an inheritance diagram showing the relationships among these classes. (Hint: Add extra classes if necessary.)
 
-### Problem 6.4
+![UML](images/UML_6_3.png)
+
+### Problem 6.6
 > Suppose your company has many managerial types such as department namager, project manager, and division manager. You also have multiple levels of vice president, some of whom reprt to other manager types. How could you combine the *Salaried*, *Manager*, and *Vice President* types you used in Exercise 3? Draw the new inheritance hierarchy.
+
+![UML](images/UML_6_6.png)
