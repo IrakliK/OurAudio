@@ -8,6 +8,6 @@ Section 1: Project Status Sheets
 
 [Section 3: Proposal Document & Slides](Proposal_Document.md)
 
-Section 4: Software Development Plan
+[Section 4: Software Development Plan](SDP_Document.md)
 
 [Section 5: Requirements Document](Requirements_Document.md)
