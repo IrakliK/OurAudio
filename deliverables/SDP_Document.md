@@ -76,4 +76,18 @@ The software will be developed by Irakli Khizanishvili. Irakli will be responsib
 ## 4.4 Project Schedule
 Project Schedule provides information for OurAudio project.
 
-### 4.4.1 PERT/GANTT Chart  
+### 4.4.1 PERT/GANTT Chart
+
+![computerSpec](./images/ouraudiogantt.png)
+
+### 4.4.2 Task/Resource Table
+
+| Task     | Hardware     | Software |
+| :------- | :----------- | :------- |
+| Look & Feel | MacBook  | Node.js, Chrome, MongoDB, macOS, GitHub |
+| Login | MacBook  | Node.js, Bcrypt, Passport, Expressjs, GitHub |
+| Logout | MacBook  | Node.js, Bcrypt, Passport, Expressjs, GitHub |
+| Register | MacBook  | Node.js, Bcrypt, Passport, Expressjs, GitHub |
+| Profile Page | MacBook  | Node.js, Chrome, MongoDB, macOS, GitHub |
+| Stream Page | MacBook  | Node.js, Chrome, MongoDB, macOS, GitHub |
+| SoundCloud API | MacBook  | Node.js, Chrome, MongoDB, macOS, GitHub |
