@@ -19,22 +19,22 @@ This Software Development Plan (SDP) provides the details of the planned develop
 
 OurAudio web application will provide an environment for musicians to collaborate and give one another considerable feedback. In order for musicians to request feedback he/she would need to upload a song via dashboard/profile page. The musician will then submit the song under a specific genre category and give some detail about their song that they have produced. Once the song is submitted, the song will be evaluated and given feedback by another musician. Subsequently, the songs with the most useful feedback will then be logged onto the stream page. The stream page will provide all of the best songs with the best feedbacks for insight.
 
-The development of this application starts on January 9 2017, will involve a thorough research about which technologies best fit the requirements of this application. The project development is broken down into milestones; starting from the first one the project proposal, which is set to be completed in week 2 of the development. Following that Software Requirement Specification set to be complete with room for future enhancements in week 5. Week 8 will have Software Development Plan or Software/Database Design Description Document. Week 11 will have the final versions of the week 8 deliverables resubmitted, and in week 13 the Software Requirements Specification will occur. In weeks 14-16 the Preliminary Demonstration Presentation will take place. Finally, week 17 with have the final product ready for demonstration and delivery.
+The development of this application starts on January 9 2017, will involve thoroughly researching which technologies best fit the requirements of this application. The project development is broken down into milestones; starting from the first one the project proposal, which is set to be completed in week 2 of the development. Following that, the Software Requirement Specification is set to be completed with room for future enhancements in week 5. Week 8 will see delivery of the have Software Development Plan or Software/Database Design Description Document. Week 11 will have scheduled deliveries of the final versions of the week 8 deliverables resubmitted, and in week 13 the Software Requirements Specification final delivery will occur. In weeks 14-16 the Preliminary Demonstration Presentation will take place. Finally, week 17 with have the final product ready for demonstration and delivery.
 
 ## 4.1.1 Project Deliverables
 
 ### 4.1.1 Project Proposal
-The project proposal involves comping up with 3 different project ideas to be proposed to the class and the instructor with each one described in one paragraph.
+The project proposal involves comping up with three different project ideas to be proposed to the class and the instructor with each one described in one paragraph.
 
 _Due Date: January 16 2017_
 
 ### 4.1.1.2 Software Requirements Specifications
-The Software Requirements Specifications is intended to be a part of the contract between customer and the development company, and in this case the instructor. The document specifies exactly all the functionalities to be implemented in the software.
+The Software Requirements Specification is intended to be a part of the contract between customer and the development company, and in this case the instructor. The document specifies exactly all the functionalities to be implemented in the software.
 
 _Due Date: February 2 2017_
 
 ### 4.1.1.3 Software Development Plan
-The Software Development Plan is intended to describe the process that will be used during the semester to develop the app, and this includes the production of all required documents and software for this project.
+The Software Development Plan is intended to describe the process that will be used during the semester to develop the application, and this includes the production of all required documents and software for this project.
 
 _Due Date: February 27 2017_
 
@@ -42,10 +42,10 @@ _Due Date: February 27 2017_
 This document will not be provided
 
 ### 4.1.1.5 Preliminary Demonstration Presentations
-The preliminary Demonstration presentation of OurAudio is the initial presentation for the project to demonstrate to classmates/instructors the final stages of the app.
+The preliminary Demonstration presentation of OurAudio is the initial presentation for the project to demonstrate to classmates/instructors the final stages of the application.
 
 ### 4.1.1.6 Final Presentations/ Demonstrations
-The final product will involve delivering the final project. The app delivery will involve the submission of all code and all supporting documents.
+The final product will involve delivering the final project. The application delivery will involve the submission of all code and all supporting documents.
 
 ## 4.2 Project Resources
 OurAudio web application has hardware resources, software resources and a project manager. The software will be developed entirely by Irakli Khizanishvili. Irakli will be responsible for pitching the idea to the instructor and classmates, writing all supporting documents and developing all the code required for this application, and finally presenting and delivering the final product.
@@ -76,7 +76,7 @@ The software will be developed by Irakli Khizanishvili. Irakli will be responsib
 ## 4.4 Project Schedule
 Project Schedule provides information for OurAudio project.
 
-### 4.4.1 PERT/GANTT Chart
+### 4.4.1 GANTT Chart
 
 ![computerSpec](./images/ouraudiogantt.png)
 

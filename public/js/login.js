@@ -1,5 +1,5 @@
 (() => {
-  $('#here').click(function() {
+  $('#here').click(() => {
     alert('Handler for .click() called.');
   });
 })();
