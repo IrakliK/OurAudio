@@ -20,6 +20,7 @@ const db = mongoose.connection;
 const routes = require('./routes/index');
 const users = require('./routes/users');
 
+
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({ defaultLayout: 'layout' }));
 app.set('view engine', 'handlebars');

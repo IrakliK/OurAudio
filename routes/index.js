@@ -10,6 +10,10 @@ router.get('/user', ensureAuthenticated, (req, res) => {
   res.render('index');
 });
 
+router.get('/stream', ensureAuthenticated, (req, res) => {
+  res.render('stream');
+});
+
 function ensureAuthenticated(req, res, next){
   if (req.isAuthenticated()) {
     return next();
