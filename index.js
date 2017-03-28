@@ -13,13 +13,58 @@ const app = express();
 const router = express.Router();
 const path = require('path');
 const mongoose = require('mongoose');
+const fs = require('fs');
+const multer = require('multer');
+
+const upload = multer({ dest: './uploads' });
 
 mongoose.connect('mongodb://localhost/ouraudio');
-const db = mongoose.connection;
+const conn = mongoose.connection;
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
 
+let gfs;
+
+const Grid = require('gridfs-stream');
+
+Grid.mongo = mongoose.mongo;
+
+conn.once('open', () => {
+  gfs = Grid(conn.db);
+  app.post('/user/upload', upload.single('avatar'), (req, res, next) => {
+    console.log(req.file.originalname);
+    const writestream = gfs.createWriteStream({
+      filename: req.file.originalname,
+    });
+    fs.createReadStream(`./uploads/${req.file.filename}`)
+      .on('end', () => { fs.unlink(`./uploads/${req.file.filename}`, (err) => {res.send('success')})})
+        .on('err', () => { res.send('Error uploading file')})
+          .pipe(writestream);
+  });
+  app.get('/user/upload/:filename', (req, res) => {
+    const readstream = gfs.createReadStream({
+      filename: req.params.filename,
+    });
+    readstream.on('error', (err) => {
+      res.send('No file found with that title');
+    });
+    readstream.pipe(res);
+  });
+  app.get('/user/upload/delete/:filename', (req, res) => {
+    gfs.exist({ filename: req.params.filename }, (err, found) => {
+      if (err) return res.send('Error occured');
+      if (found) {
+        gfs.remove({ filename: req.params.filename }, (err) => {
+          if (err) return res.send('Error occured');
+          res.send('File deleted!');
+        });
+      } else {
+        res.send('No file found with that title');
+      }
+    });
+  });
+});
 
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({ defaultLayout: 'layout' }));
